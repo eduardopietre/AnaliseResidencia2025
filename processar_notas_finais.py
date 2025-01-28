@@ -54,7 +54,7 @@ def merge(file_notas: str):
 
 
 def main():
-    file_notas = "nota-final-enare-residencia-medica.csv"
+    file_notas = "nota-final-enare-residencia-medica-definitivo-27-01-2025.csv"
     merge(file_notas)
 
 

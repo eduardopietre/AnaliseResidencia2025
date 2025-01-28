@@ -45,6 +45,9 @@ def process_file(path: str):
                 if " - Liminar" in line:
                     line = line.replace(" - Liminar", "-Liminar")
 
+                if "*" in line:
+                    line = line.replace("*", "")
+
                 if current_table_title and line.strip() and "ACESSO DIRETO" in current_table_title.upper():
                     # Separa os dados das linhas
                     parts = line.split()
@@ -72,4 +75,4 @@ def process_file(path: str):
 
 
 if __name__ == '__main__':
-    process_file("nota-final-enare-residencia-medica.pdf")
+    process_file("nota-final-enare-residencia-medica-definitivo-27-01-2025.pdf")
